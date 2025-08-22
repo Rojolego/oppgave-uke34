@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jordi - Min profil</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <div class="nav-container">
+      <h1 class="logo">Jordi</h1>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#om-meg">Om meg</a></li>
+          <li><a href="#spill">Favorittspill</a></li>
+          <li><a href="#plattformer">Plattformer</a></li>
+          <li><a href="#interesser">Interesser</a></li>
+        </ul>
+        <div class="burger">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Om meg -->
+    <section id="om-meg" class="profile-section section-color1">
+      <div class="profile-img-container">
+        <img src="bilder/IMG_3607.jpg" alt="Bilde av Jordi" class="profile-img">
+      </div>
+      <div class="profile-info">
+        <h2>Hei, jeg er Jordi!</h2>
+        <p><strong>Alder:</strong> 16 år | <strong>Opprinnelse:</strong> Halvt chilensk og norsk</p>
+        <p>Jeg elsker teknologi, gaming og å møte nye mennesker. Jeg bor på Odderhei Terrasse og liker å lære nye ting hver dag.</p>
+
+        <h3>Familie</h3>
+        <p>Jeg har tre søsken: Jacqueline og Kevin som er eldre, og Natalia som er yngre. Vi er en nær familie og gjør mye sammen.</p>
+
+        <h3>Interesser</h3>
+        <p>På fritiden liker jeg å spille spill, høre på musikk, lese bøker og lære mer om programmering og teknologi.</p>
+      </div>
+    </section>
+
+    <!-- Favorittspill -->
+    <section id="spill" class="section section-color2">
+      <h2>Mine favorittspill</h2>
+      <div class="grid">
+        <div class="card">
+          <img src="bilder/medieval-warfare--dark-age-tactics-ver-2_3.png" alt="Minecraft">
+          <h3>Minecraft</h3>
+          <p>Bygge, utforske og overleve i en kreativ verden.</p>
+        </div>
+        <div class="card">
+          <img src="bilder/faq.webp" alt="Tabs">
+          <h3>TABS</h3>
+          <p>Strategi og humor i taktiske kamper.</p>
+        </div>
+        <div class="card">
+          <img src="bilder/image-(58).webp" alt="Mounten Blade">
+          <h3>Mount & Blade</h3>
+          <p>Historiske kamper og rollespill på en episk skala.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Plattformer -->
+    <section id="plattformer" class="section section-color3">
+      <h2>Mine plattformer</h2>
+      <div class="grid">
+        <div class="card">
+          <img src="bilder/474652.c8b7a8fb56baa3132aa12e9bf663f265.512.jpg" alt="PC">
+          <h3>PC</h3>
+          <p>Høy ytelse for gaming og programmering.</p>
+        </div>
+        <div class="card">
+          <img src="bilder/$_57.jpg" alt="PlayStation">
+          <h3>PlayStation</h3>
+          <p>Spill og eksklusive titler for avslapning.</p>
+        </div>
+        <div class="card">
+          <img src="bilder/2bd239ef-b3a5-4b50-b5a5-ba6418012534.jpg" alt="Xbox">
+          <h3>Xbox</h3>
+          <p>Multiplayer og actionspill med venner.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interesser -->
+    <section id="interesser" class="section section-color4">
+      <h2>Mine interesser</h2>
+      <div class="grid">
+        <div class="card">
+          <img src="bilder/photo-1597167100957-1dfa110c1c14.webp" alt="Lesing">
+          <h3>Lesing</h3>
+          <p>Fantasy, teknologi og inspirerende bøker.</p>
+        </div>
+        <div class="card">
+          <img src="bilder/headphones-690685_640.jpg" alt="Musikk">
+          <h3>Musikk</h3>
+          <p>Alt fra chill beats til energisk rock.</p>
+        </div>
+        <div class="card">
+          <img src="bilder/applications-of-computer-programming.webp" alt="Programmering">
+          <h3>Programmering</h3>
+          <p>Koding, spillutvikling og nye teknologier.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Jordi. Laget med ❤️</p>
+  </footer>
+
+  <script>
+    // Burger-meny
+    const burger = document.querySelector('.burger');
+    const navLinks = document.querySelector('.nav-links');
+
+    burger.addEventListener('click', () => {
+      navLinks.classList.toggle('nav-active');
+      burger.classList.toggle('toggle');
+    });
+  </script>
+
+</body>
+</html>
